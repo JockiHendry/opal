@@ -64,7 +64,7 @@ docker-build-client-eopa:
 	@docker build -t permitio/opal-client-eopa --target client-eopa -f docker/Dockerfile .
 
 docker-build-client-cedar:
-	@docker build -t permitio/opal-client-cedar --target client-cedar -f docker/Dockerfile .
+	@docker build -t jockihendry/opal-client-cedar --target client-cedar -f docker/Dockerfile .
 
 docker-build-client-standalone:
 	@docker build -t permitio/opal-client-standalone --target client-standalone -f docker/Dockerfile .
@@ -105,17 +105,17 @@ docker-build-client-standalone-alpine:
 	@docker build -t permitio/opal-client-standalone:next-alpine --target client-standalone-alpine -f docker/Dockerfile .
 
 docker-build-client-cedar-alpine:
-	@docker build -t permitio/opal-client-cedar:next-alpine --target client-cedar-alpine -f docker/Dockerfile .
+	@docker build -t jockihendry/opal-client-cedar:next-alpine --target client-cedar-alpine -f docker/Dockerfile .
 
 docker-build-client-next-alpine:
 	@docker build -t permitio/opal-client-standalone:next-alpine --target client-standalone-alpine -f docker/Dockerfile .
 	@docker build -t permitio/opal-client:next-alpine --target client-alpine -f docker/Dockerfile .
-	@docker build -t permitio/opal-client-cedar:next-alpine --target client-cedar-alpine -f docker/Dockerfile .
+	@docker build -t jockihendry/opal-client-cedar:next-alpine --target client-cedar-alpine -f docker/Dockerfile .
 
 docker-build-client-latest-alpine:
 	@docker build -t permitio/opal-client-standalone:latest-alpine --target client-standalone-alpine -f docker/Dockerfile .
 	@docker build -t permitio/opal-client:latest-alpine --target client-alpine -f docker/Dockerfile .
-	@docker build -t permitio/opal-client-cedar:latest-alpine --target client-cedar-alpine -f docker/Dockerfile .
+	@docker build -t jockihendry/opal-client-cedar:latest-alpine --target client-cedar-alpine -f docker/Dockerfile .
 
 docker-build-server-next-alpine:
 	@docker build -t permitio/opal-server:next-alpine --target server-alpine -f docker/Dockerfile .

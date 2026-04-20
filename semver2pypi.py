@@ -22,5 +22,4 @@ semver_version = SemVerVersion.parse(sys.argv[1])
 finalized_version = semver_version.finalize_version()
 prerelease = semver_version.prerelease or ""
 build = semver_version.build or ""
-pypi_version = PyPIVersion(f"{finalized_version}{prerelease}{build}")
-print(pypi_version)
+print(f"{finalized_version}-{prerelease}{build}")
